@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Artists">Artists</string>
+    <string name="Settings">Settings</string>
+    <string name="Search">Search</string>
+    <string name="Searchable">(A Searchable activity still needs to be implemented )</string>
+    <string name="NowPlaying">Now playing</string>
+    <string name="ArtistsSearch">Search Artists</string>
+    <string name="message">(Needs Mediaplayer to be setup for player functionality)</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+</resources>

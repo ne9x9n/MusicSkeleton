@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicapp.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/background_material_dark"
+    android:weightSum="2"
+    android:clickable="true"
+    android:contextClickable="true">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_weight="0"
+        android:layout_marginTop="24dp"
+        android:weightSum="2">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/ArtistsButton"
+            android:src="@drawable/ic_keyboard_arrow_right_white_48dp"
+            android:background="#00ffffff"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:clickable="false"
+            android:contextClickable="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/Artists"
+            android:id="@+id/textView2"
+            android:textColor="@color/primary_text_default_material_dark"
+            android:layout_alignTop="@+id/textView"
+            android:layout_toStartOf="@+id/ArtistsButton"
+            android:clickable="false"
+            android:contextClickable="false" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/SettingsButton"
+            android:src="@drawable/ic_settings_white_48dp"
+            android:background="#00ffffff"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView"
+            android:textColor="@color/primary_text_default_material_dark"
+            android:layout_toEndOf="@+id/SettingsButton"
+            android:text="@string/Settings"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/NowPlaying"
+            android:id="@+id/textView3"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="36sp"
+            android:textIsSelectable="false"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/message"
+            android:id="@+id/textView6"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:textSize="12sp"
+            android:textIsSelectable="false"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView"
+            android:src="@drawable/ic_album_grey_600_48dp"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_weight="0"
+        android:background="@color/material_grey_50"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="2dp">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0"
+        android:paddingBottom="18dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_play_arrow_white_48dp"
+            android:alpha="100"
+            android:background="#00ffffff"
+            android:id="@+id/imageButton2"
+            android:padding="16dp"
+            android:layout_margin="24dp"
+            android:nestedScrollingEnabled="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_skip_next_white_48dp"
+            android:alpha="100"
+            android:background="#00ffffff"
+            android:id="@+id/imageButton"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageButton2"
+            android:padding="16dp"
+            android:layout_margin="24dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_skip_previous_white_48dp"
+            android:alpha="100"
+            android:background="#00ffffff"
+            android:id="@+id/imageButton3"
+            android:layout_toStartOf="@+id/imageButton2"
+            android:padding="16dp"
+            android:layout_margin="24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/message"
+            android:id="@+id/textView9"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+</LinearLayout>
